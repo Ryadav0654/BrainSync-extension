@@ -1,0 +1,16 @@
+{
+  "name": "BrainSync - Smart Link Saver",
+  "description": "Quickly save and organize your favorite links to your BrainSync dashboard. Tag, categorize, and access them anytime.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "brain.png"
+  },
+  "permissions": ["tabs", "storage", "activeTab"],
+  "icons": {
+    "16": "brain.png",
+    "48": "brain.png",
+    "128": "brain.png"
+  }
+}

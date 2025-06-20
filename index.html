@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BrainSync Extension</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a href="https://brainsyncapp.vercel.app" target="_blank" class="brand">
+          <img src="brain.png" alt="BrainSync Logo" class="logo" />
+          <div>
+            <span> BrainSync</span>
+            <small>Your Personal Link Organizer</small>
+          </div>
+        </a>
+        <button id="auth-button" class="auth-button">Loading...</button>
+      </div>
+
+      <label for="title" class="label">Title (optional)</label>
+      <input type="text" id="title" class="input" placeholder="Page title" />
+
+      <label for="type" class="label">Choose Link Type*</label>
+      <select id="type" class="input">
+        <option value="link">Link</option>
+        <option value="youtube">Youtube</option>
+        <option value="blogs">Blogs</option>
+        <option value="tweet">Tweet</option>
+        <option value="document">Document</option>
+        <option value="questions">Questions</option>
+      </select>
+
+      <label for="tags" class="label">Tags*</label>
+      <input
+        type="text"
+        class="input"
+        id="tags"
+        placeholder="Tags (comma separated)"
+      />
+
+      <button id="save" disabled>Save Link</button>
+      <div id="status"></div>
+      <div class="footer">
+        <p>Save and organize your links effortlessly with BrainSync.</p>
+        <p>
+          Developed by
+          <a href="https://github.com/Ryadav0654" target="_blank">Ryadav0654</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
