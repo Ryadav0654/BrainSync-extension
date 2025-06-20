@@ -61,20 +61,18 @@ document.getElementById("save").addEventListener("click", async () => {
   }
 
   const newUrl = new URL(tab.url);
-  const url = new URL(newUrl.href);
 
-  if (!url) {
+  if (!newUrl.href) {
     alert("Please provide the valid url!");
   }
 
-  console.log("newUrl: ", url);
   try {
     const response = await fetch("https://brainsync.vercel.app/api/content", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
       body: JSON.stringify({
-        link: url.href,
+        link: newUrl.href,
         type: type,
         title: title,
         tags: tags.split(",").map((t) => t.trim()),
